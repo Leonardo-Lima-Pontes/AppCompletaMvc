@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-AppCompletaMvc-A97A9AC6-922F-4B9F-87BA-7459BB66C5F1</UserSecretsId>
   </PropertyGroup>

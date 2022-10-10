@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using AppCompletaMvc.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace AppCompletaMvc.Data
@@ -9,5 +10,9 @@ namespace AppCompletaMvc.Data
             : base(options)
         {
         }
+
+        DbSet<Produto> Produtos { get; set; }
+        DbSet<Fornecedor> Fornecedores { get; set; }
+        DbSet<Endereco> Enderecos { get; set; }
     }
 }

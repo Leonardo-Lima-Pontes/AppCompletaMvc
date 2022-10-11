@@ -2,7 +2,7 @@
 
 namespace AppCompletaMvc.Models
 {
-    public class Produto : Entity
+    public class ProdutoModel : Entity
     {
         public Guid FornecedorId { get; set; }
 
@@ -22,6 +22,6 @@ namespace AppCompletaMvc.Models
         public decimal Valor { get; set; }
         public DateTime DataDeCadastro { get; set; }
         public bool Ativo { get; set; }
-        public Fornecedor Fornecedor { get; set; }
+        public FornecedorModel Fornecedor { get; set; }
     }
 }

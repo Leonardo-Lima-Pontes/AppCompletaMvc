@@ -2,7 +2,7 @@
 
 namespace AppCompletaMvc.Models
 {
-    public class Endereco : Entity
+    public class EnderecoModel : Entity
     {
         public Guid FornecedorId { get; set; }
 
@@ -11,7 +11,7 @@ namespace AppCompletaMvc.Models
         public string Logradouro { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        [StringLength(1, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 8)]
+        [StringLength(8, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 1)]
         public string Numero { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
@@ -33,6 +33,6 @@ namespace AppCompletaMvc.Models
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(50, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 1)]
         public string Estado { get; set; }
-        public Fornecedor Fornecedor { get; set; }
+        public FornecedorModel Fornecedor { get; set; }
     }
 }

@@ -11,8 +11,8 @@ namespace AppCompletaMvc.Data
         {
         }
 
-        DbSet<Produto> Produtos { get; set; }
-        DbSet<Fornecedor> Fornecedores { get; set; }
-        DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<ProdutoModel> Produtos { get; set; }
+        public DbSet<FornecedorModel> Fornecedores { get; set; }
+        public DbSet<EnderecoModel> Enderecos { get; set; }
     }
 }
